@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>James River County Pet Adoption Service</title>
+
+    </head>
+    <body>
+        <!-- Container to wrap everything -->
+        <div id="container">
+            
+            <header>James River County Pet Adoption Service</header>
+            
+            <!-- Main Navigation -->
+            <nav>  
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hours.html">Hours of Operation</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- End of Main Navigation -->  
+
+            <!-- Main Content -->
+            <main>
+                <h2>Contact us for more information:</h2>
+
+                <!-- Form Start -->    
+                <form action="signup" method="post">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+
+                        <label>Enter your full name</label><br>
+                        <input type="text" name="name" ><br>
+
+                        <label>Enter your email</label><br>
+                        <input type="email" name="email" ><br>
+
+                        <label>Enter your phone</label><br>
+                        <input type="text" name="phone" ><br><br>
+
+                        <label>How should we contact you?</label><br>
+                        <select>
+                            <option>Email</option>
+                            <option>Phone</option>
+                        </select><br><br>
+                        <label>Location?</label><br>
+                        <select>
+                            <option>Toano</option>
+                            <option>Williamsburg</option>
+                            <option>Yorktown</option>
+                        </select>
+                        <br><br>
+
+                        <label>Are you interested in adoption?</label><br>
+                        <input type="radio" name="interest" value="yes">yes
+                        <input type="radio" name="interest" value="no">no<br><br>
+
+                        Additional Comments:<br>
+                        <textarea rows="5" cols="30"></textarea><br>
+                        <input type="submit" value="sign-up">
+                    </fieldset>
+                </form>
+                <!-- End of Form -->
+                
+            </main>
+            <!-- End of Main Content -->
+
+            <!-- Footer Information -->
+            <footer>&copy; Copyright 2023</footer> <!-- This is the footer -->
+        </div>
+        <!-- End container -->
+    </body>
+</html>
