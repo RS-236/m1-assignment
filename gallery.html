@@ -28,10 +28,11 @@
 
             <!-- Main Content -->
             <main>
-                <h1>Gallery
+                <h1>Gallery</h1>
 
                 <ul id ="gallery-photos">
-                    <class="photo"><img src="images/Puppy1.jpg">
+                    <div>
+                    <!--<class="photo"><img src="images/Puppy1.jpg">
                     <class="photo"><img src="images/Puppy2.jpg">
                     <class="photo"><img src="images/Puppy3.jpg">
                     <class="photo"><img src="images/Puppy4.jpg">
@@ -40,7 +41,8 @@
                     <class="photo"><img src="images/Puppy7.jpg">
                     <class="photo"><img src="images/Puppy8.jpg">
                     <class="photo"><img src="images/Puppy9.jpg">
-                    <class="photo"><img src="images/Puppy10.jpg">
+                    <class="photo"><img src="images/Puppy10.jpg">-->
+                    </div>
                 </ul>
             </main>
             <!-- End of Main Content -->
@@ -49,5 +51,29 @@
             <footer>&copy; Copyright 2023</footer> <!-- This is the footer -->
         </div>
         <!-- End container -->
+
+        <script>
+            var photos = [];
+            var fileNames = [];
+            var imageList = [];
+            var image;
+            var openList;
+            var closeList;
+            
+            var openCaptionTag;
+            var closeCaptionTag;
+            var openDescTag;
+            var closeDescTag;
+
+            for (var i=0; i<10; i++) {
+                fileNames.push("Puppy" + (i+1));
+                photos.push("<img src='images/"+fileNames[i]+".jpg'>");
+                image = openList + photos[i] + closeList;
+                imageList.push(image);
+            }
+
+            document.getElementById("gallery-photos").innerHTML = imageList;
+        </script>
+
     </body>
 </html>
